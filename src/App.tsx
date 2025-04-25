@@ -10,7 +10,7 @@ function App() {
       let token = lexer.getNextToken();
       console.log('Lexical Analysis Results:');
       console.log('------------------------');
-      console.clear()
+      console.clear();
       
       while (token.type !== 'EOF') {
         console.log(`Type: ${token.type}, Value: "${token.value}", Line: ${token.line}, Column: ${token.column}`);
